@@ -50,6 +50,7 @@ module.exports = {
             allowTemplateLiterals: true,
           },
         ],
+        curly: ['error', 'all'],
       },
     },
     {
