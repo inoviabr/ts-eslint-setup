@@ -1,5 +1,4 @@
-export default {
-  root: true,
+module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
@@ -7,16 +6,17 @@ export default {
     sourceType: 'module',
     ecmaVersion: 'latest',
   },
-  ignorePatterns: ['.eslintrc.json'],
+  ignorePatterns: ['.eslintrc.js'],
   plugins: ['@typescript-eslint/eslint-plugin', '@darraghor/nestjs-typed'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:@darraghor/nestjs-typed/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   env: {
     node: true,
     jest: true,
+    es6: true,
   },
   overrides: [
     {
@@ -34,6 +34,13 @@ export default {
         ],
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-empty-interface': 'off',
+        '@darraghor/nestjs-typed/injectable-should-be-provided': [
+          'error',
+          {
+            src: ['**/*.ts'],
+            filterFromPaths: ['node_modules', '.test.', '.spec.'],
+          },
+        ],
         'eol-last': ['error', 'always'],
         semi: ['error', 'always'],
         quotes: [
