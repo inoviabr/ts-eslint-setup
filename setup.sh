@@ -1,5 +1,5 @@
 #!/bin/sh
-wget -q https://raw.githubusercontent.com/lucasrdrgs/ts-eslint-setup/main/.eslintrc.json -O .eslintrc.json;
+wget -q https://raw.githubusercontent.com/lucasrdrgs/ts-eslint-setup/main/.eslintrc.js -O .eslintrc.js;
 wget -q https://raw.githubusercontent.com/lucasrdrgs/ts-eslint-setup/main/.prettierignore -O .prettierignore;
 wget -q https://raw.githubusercontent.com/lucasrdrgs/ts-eslint-setup/main/.prettierrc -O .prettierrc;
 wget -q https://raw.githubusercontent.com/lucasrdrgs/ts-eslint-setup/main/tsconfig.json -O tsconfig.json;
