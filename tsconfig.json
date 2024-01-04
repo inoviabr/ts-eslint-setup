@@ -9,6 +9,7 @@
     "skipLibCheck": true
   },
   "include": [
+    ".eslintrc.js",
     "src/**/*.ts",
     "src/**/*.tsx" /* add more files as required such as your vite.config.ts or custom type declarations for raw file imports */
   ]
