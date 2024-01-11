@@ -8,7 +8,9 @@
     "strict": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./"
   },
   "include": [
     ".eslintrc.js",
