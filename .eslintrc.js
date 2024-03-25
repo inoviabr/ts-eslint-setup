@@ -52,6 +52,7 @@ module.exports = {
         ],
         curly: ['error', 'all'],
         eqeqeq: ['error', 'always'],
+        'prefer-const': 'error',
       },
     },
     {
